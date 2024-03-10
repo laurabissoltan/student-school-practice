@@ -9,8 +9,7 @@ import java.util.List;
 
 @Repository
 public interface SchoolRepository extends JpaRepository<School, Long> {
-    List<School> findSchoolByName(String schoolName);
-
+    School findSchoolByName(String schoolName);
 
     @Query("select s.studentCount from School s where s.id = :id")
     int totalStudents(long id);
