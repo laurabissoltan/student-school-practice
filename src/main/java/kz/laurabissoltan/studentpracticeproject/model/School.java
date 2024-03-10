@@ -15,12 +15,12 @@ public class School {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    long id;
+    private long id;
 
     @Column (name = "school_name")
-    String name;
+    private String name;
 
     @Column (name = "student_count")
-    int studentCount;
+    private int studentCount;
 
 }
